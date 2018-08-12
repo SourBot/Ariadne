@@ -43,7 +43,22 @@
 
 					</ul>
           <!-- Add the delete buttons here -->
-
+          <div class="row t10">
+            <div class="col-lg-12">
+              <div class="btn-toolbar">
+                <div class="btn-group">
+                  <a href="{% url 'deletecomplete' %} "<button type="button" class="btn btn-warning">
+                    <i class="glyphicon glyphicon-trash"></i> DELETE COMPLETED
+                  </button></a>
+                </div>
+                <div class="btn-group">
+                  <a href="{% url 'deleteall' %}"<button type="button" class="btn btn-warning">
+                    <i class="glyphicon glyphicon-trash"></i> DELETE ALL
+                  </button> </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Display list of user input todo items from db here -->
       </div>
       <div id="clock timer" class="col-md-4">
