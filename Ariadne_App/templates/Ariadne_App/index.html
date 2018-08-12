@@ -18,6 +18,19 @@
       <div id="block1" class="row">
         <div id="todo" class="col-md-8">
           <h2>WHAT DO YOU WANT TO DO TODAY?</h2>
+          <!-- here is where the form is (aka the text field where user input goes)  -->
+          <form action="{% url 'add' %}" method="POST" role="form">
+            {% csrf_token %}
+
+						<div class="form-group">
+							<div class="input-group">
+                {{ form.text }}
+							  <span class="input-group-btn">
+								  <button type="submit" class="btn btn-default" id="add-btn">ADD</button>
+							  </span>
+							</div>
+						</div>
+					</form>
           <!-- add the form for user input here -->
           <ul class="list-group t20">
             {% for todo in todo_list %}
