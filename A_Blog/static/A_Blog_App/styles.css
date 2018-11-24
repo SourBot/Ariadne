@@ -1,0 +1,17 @@
+.todo-completed {
+  text-decoration: line-through;
+}
+
+.del-btn-group {
+    margin-right: 10px;
+}
+
+.jumbotron {
+	font-size:40px;
+  color: blue;
+}
+
+#del-icon {
+  position: relative;
+  padding-left: 7px;
+}

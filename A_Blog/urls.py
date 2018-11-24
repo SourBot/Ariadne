@@ -1,0 +1,9 @@
+from django.urls import path, include
+from . import views
+
+app_name= "Blog"
+
+urlpatterns = [
+    path('', views.index, name="index"),
+
+    ]

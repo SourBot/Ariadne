@@ -1,5 +1,6 @@
-from django.urls import path
+from django.urls import path, include
 from . import views
+
 
 urlpatterns = [
     path('', views.index, name="index"),
@@ -8,4 +9,5 @@ urlpatterns = [
     path("deletecomplete", views.deleteCompleted, name="deletecomplete"),
     path("deleteall", views.deleteAll, name="deleteall"),
     path("deleteselected/<todo_id>", views.deleteSelected, name="deleteselected"),
+    path('blog/', include('A_Blog.urls'), name="Blog"),
     ]
